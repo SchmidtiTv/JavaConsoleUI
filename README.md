@@ -16,6 +16,7 @@ I created this library to provide an intuitive and straightforward way to build 
 - **Text Input**: Prompt users to enter input.
 - **Choice Input**: Allow users to select a single option.
 - **Checkbox Input**: Enable multiple options to be selected interactively.
+- **Progress Bar**: Display a progress bar in the console.
 
 ---
 
@@ -92,7 +93,22 @@ List<CheckBoxOption> selectedOptions = CheckBox.input(options, "Select options:"
 ```
 
 ---
+### 5. **Progress Bar**
+Display a progress bar in the console.
+```java
+// Example usage:
+ProgressBar progressBar = new ProgressBar(100, 50, '█', '░', false);
+for (int i = 0; i <= 100; i++) {
+    try {
+        Thread.sleep(50);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    progressBar.updateProgress(i);
+}
+```
 
+---
 ## Contribution
 Feel free to fork the repository, create a pull request, or suggest features and improvements! Contributions are welcome.
 
