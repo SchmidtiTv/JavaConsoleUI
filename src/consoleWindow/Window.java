@@ -28,7 +28,6 @@ public class Window {
         this.content = new StringBuilder();
     }
 
-
     /**
      * Constructor to create a window with auto-sized width and height.
      *
@@ -38,7 +37,6 @@ public class Window {
         this.autoSize = autoSize;
         this.content = new StringBuilder();
     }
-
 
     /**
      * Adds content inside the ASCII window.
@@ -60,9 +58,9 @@ public class Window {
      * @param leftBottomChar  The character for the bottom-left corner.
      * @param rightBottomChar The character for the bottom-right corner.
      */
-    public void customizeBorder(String sideChar, String topChar, String bottomChar,
-                                String leftTopChar, String rightTopChar,
-                                String leftBottomChar, String rightBottomChar) {
+    public void setBorder(String sideChar, String topChar, String bottomChar,
+                          String leftTopChar, String rightTopChar,
+                          String leftBottomChar, String rightBottomChar) {
         this.sideChar = sideChar;
         this.topChar = topChar;
         this.bottomChar = bottomChar;
